@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/711f9ac961.js" crossorigin="anonymous"></script>
+    <style>
+        .login-contenar{
+            display: flex;
+            justify-content: center;
+        }
+       .login{
+           display: flex;
+           flex-direction: column;   
+       }
+       .login input ,button{
+           font-size:20px ;
+           border: 2px solid darkgrey;
+           margin-top: 20px;
+           border-radius: 15px;
+       }
+       nav{
+           background-color: darkkhaki;
+           padding: 10px;
+           display: flex;
+           justify-content: space-between;
+       }
+       nav a{
+           text-decoration: none;
+           margin-right: 20px;
+           font-size: 20px;
+           color:black;
+           font-weight: bolder;
+       }
+       .calander{
+           height: 400px;
+           display: grid;
+           grid-template-columns: repeat(7 , 1fr);
+           grid-gap: 1em;
+       }
+       .date , .day{
+           background-color: mediumvioletred;
+           font-size: 1.9rem;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-radius: 20px;
+           
+       }
+       .date:hover{
+           transform: scale(1.1);
+       }
+       .day:hover{
+           background-color: rgb(135, 235, 148);
+       }
+       .other-month{
+           background-color: powderblue;
+       }
+       .day{
+           background-color: rosybrown;
+           font-size: 20px;
+       }
+       h1{
+           font-size: 30px;
+           text-align: center;
+       }
+       
+       .food-manu{
+           display: flex;
+       }
+       .food{
+           border: 2px solid steelblue;
+           width: 300px;
+       }
+
+       @media (max-width:700px) {
+           
+           .food-manu{
+               
+               flex-direction: column;
+           }
+           .food{
+               background-color: tomato;
+               margin: 10px;
+           }
+       }
+       .tiger img{
+           width: 277px;
+           height: 200px;
+       }
+       .album-contenar{
+           display: flex;
+           flex-wrap: wrap;
+       }
+       .photo-album{
+           
+           width: 277px;
+           overflow: hidden;
+           position: relative;
+           
+       }
+       .detels{
+           display: none;
+           position: absolute;
+           width: 277px;
+           top: 0;
+       }
+       .photo-album:hover .detels{
+           background-color: rgba(244, 165, 96, 0.3);
+            display: block; 
+       }
+       .photo-album:hover .tiger img{
+           transform: scale(3);
+           transition: transform 2s ease-in;
+       }
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <nav>
+                <span>
+                    <a href="">Home</a>
+                <a href="">prudac</a>
+                <a href=""> login</a>
+                <a href=""> calander </a>
+                </span>
+              <span>
+                    
+                <a href=""><i class="fas fa-user-graduate"></i></a>
+                <a href=""><i class="fas fa-sign-in-alt"></i> </a>
+              </span>
+            </nav>
+        </header>
+        <div class="login-contenar">
+            
+                <form action="" class="login">
+                    <h1>login</h1>
+                    <input type="email" name="email" id="" placeholder="enter your emaill">
+    
+                    <input type="password" name="password" id="" placeholder="enter your password">
+               
+               <button type="submit">login</button>
+               
+               
+                </form>
+       
+        </div>
+    </section>
+     <br>
+     <br>
+    <hr>
+    <section>
+        <h1> CALENDER 2021 </h1>
+        
+
+            <div class="calander">
+                <div class="day">sun</div>
+                <div class="day">mon</div>
+                <div class="day">thu</div>
+                <div class="day">wed</div>
+                <div class="day">tru</div>
+                <div class="day">fri</div>
+                <div class="day">sat</div>
+                <div class="date other-month">30</div>
+                <div class="date other-month">31</div>
+                <div class="date">1</div>
+                <div class="date">2</div>
+                <div class="date">3</div>
+                <div class="date">4</div>
+                <div class="date">5</div>
+                <div class="date">6</div>
+                <div class="date">7</div>
+                <div class="date">8</div>
+                <div class="date">9</div>
+                <div class="date">10</div>
+                <div class="date">11</div>
+                <div class="date">12</div>
+                <div class="date">13</div>
+                <div class="date">14</div>
+                <div class="date">15</div>
+                <div class="date">16</div>
+                <div class="date">17</div>
+                <div class="date">18</div>
+                <div class="date">19</div>
+                <div class="date">20</div>
+                <div class="date">21</div>
+                <div class="date">22</div>
+                <div class="date">23</div>
+                <div class="date">24</div>
+                <div class="date">25</div>
+                <div class="date">26</div>
+                <div class="date">27</div>
+                <div class="date">28</div>
+                <div class="date">29</div>
+                <div class="date">30</div>
+                <div class="date other-month">1</div>
+                <div class="date other-month">2</div>
+                <div class="date other-month">3</div>
+          
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <br> <br>
+    <hr>
+
+    <section class="food-manu">
+
+    
+
+            <div class="food">
+                <img src="food.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit repudiandae voluptate, ex nostrum at dolore quidem optio obcaecati similique perspiciatis, tempore fugit harum ipsa asperiores. Tempore laboriosam repellat corporis eligendi natus odio, rerum debitis! Fugit labore eum veniam maiores molestias.</p>
+
+                <button type="submit"> odrer price</button>
+            </div>
+        
+
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit repudiandae voluptate, ex nostrum at dolore quidem optio obcaecati similique perspiciatis, tempore fugit harum ipsa asperiores. Tempore laboriosam repellat corporis eligendi natus odio, rerum debitis! Fugit labore eum veniam maiores molestias.</p>
+
+            <button type="submit"> odrer price</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit repudiandae voluptate, ex nostrum at dolore quidem optio obcaecati similique perspiciatis, tempore fugit harum ipsa asperiores. Tempore laboriosam repellat corporis eligendi natus odio, rerum debitis! Fugit labore eum veniam maiores molestias.</p>
+
+            <button type="submit"> odrer price</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit repudiandae voluptate, ex nostrum at dolore quidem optio obcaecati similique perspiciatis, tempore fugit harum ipsa asperiores. Tempore laboriosam repellat corporis eligendi natus odio, rerum debitis! Fugit labore eum veniam maiores molestias.</p>
+
+            <button type="submit"> odrer price</button>
+        </div>
+
+        </section>
+
+        <br> <br>
+        <hr>
+        <br>
+        <section class="album-contenar">
+            <div class="photo-album">
+            
+
+                <img src="image/tiger.jpg" alt="">
+            
+            
+            <div class="detels">
+                <h3>triger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non laudantium blanditiis, officiis dignissimos praesentium quisquam aut suscipit! Quae quasi quis aspernatur numquam nesciunt cupiditate consequatur modi a, nobis quaerat!</p>
+            </div>
+
+          
+             
+        </section>
+    
+
+
+</body>
+</html>
